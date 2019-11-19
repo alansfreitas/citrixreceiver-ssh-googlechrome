@@ -1,5 +1,7 @@
 # dockerfiles-centos-ssh-googlechrome-citrix-receiver
 
+Running Citrix Receiver with google chrome in any linux distribution running podman or docker(no tested)
+
 # Building & Running
 
 Copy the sources to your docker host and build the container:
@@ -21,7 +23,7 @@ CONTAINER ID        IMAGE                 COMMAND             CREATED           
 
 Use SSH with x11 forwarding:
 
-	$ ssh -X -p xxxx user@localhost 
+	$ ssh -X -p 49154 user@localhost 
 
 Use password "newpass" in startup.sh script
 
