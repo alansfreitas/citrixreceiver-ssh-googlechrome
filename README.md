@@ -4,11 +4,12 @@
 
 Copy the sources to your docker host and build the container:
 
-	# docker build --rm -t user/ssh:centos7 .
+	
+	$ podman build --rm -t user/ssh:centos7 .
 
 To run:
 
-	# docker run -d -p 22 user/ssh:centos7
+	$ podman run -d -p 22 user/ssh:centos7
 
 Get the port that the container is listening on:
 
@@ -20,14 +21,14 @@ CONTAINER ID        IMAGE                 COMMAND             CREATED           
 
 Use SSH with x11 forwarding:
 
-	# ssh -X -p xxxx user@localhost 
+	$ ssh -X -p xxxx user@localhost 
 
 Use password "newpass" in startup.sh script
 
 Use google chrome without sandbox to download ICA file:
 
-	# google-chrome --no-sandbox
+	$ google-chrome --no-sandbox
 	
 After download ICA file use Citrix Receiver command to run Virtual Desktop:
 
-	# /opt/Citrix/ICAClient/wfica /home/user/Downloads/xxxx.ica
+	$ /opt/Citrix/ICAClient/wfica /home/user/Downloads/xxxx.ica
