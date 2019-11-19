@@ -24,7 +24,7 @@ Use SSH with x11 forwarding:
 
 Use password "newpass" in startup.sh script
 
-Use google chrome without sandbox:
+Use google chrome without sandbox to download ICA file:
 
 	# google-chrome --no-sandbox
 	
